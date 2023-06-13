@@ -1,20 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header.astro';
+import Projects from '../components/projects.astro';
+import Footer from '../components/footer.astro'
 ---
 
 <Layout title="My Portfolio">
-	<main class="bg-light dark:bg-night min-w-screen min-h-screen">
+	<main class="w-[1160px] h-screen m-auto">
 		<Header />
-		<section class="dark:text-light block">
-			<h1 class="text-blue-400 dark:text-blue-300 font-bold text-5xl text-center mt-40 mr-[795px]">
+		<section class="text-light mt-60">
+			<h1 class="text-blue-400 font-bold text-5xl">
 				<p>Hi!, I'm Daniel 👋</p>
 			</h1>
-			<div class="grid justify-center text-night dark:text-light">
-				<p class="text-3xl mr-[875px]">Front-End Developer</p>
+			<div class="text-light">
+				<p class="text-3xl">Front-End Developer</p>
 			</div>
 		</section>
+		<Projects />	
 	</main>
+	<Footer />
 </Layout>
+	
 
 
