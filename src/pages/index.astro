@@ -1,22 +1,27 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header.astro';
-import Projects from '../components/projects.astro';
+import Card from '../components/card_project.astro';
 import Footer from '../components/footer.astro'
 ---
 
 <Layout title="My Portfolio">
-	<main class="w-[1160px] h-screen m-auto">
+	<main class="min-[390px]:w-[400px] lg:w-[1160px] 2xl:w-[1190px] h-screen m-auto transition-all">
 		<Header />
-		<section class="text-light mt-60">
-			<h1 class="text-blue-400 font-bold text-5xl">
-				<p>Hi!, I'm Daniel 👋</p>
+		<section class="text-light mt-60 min-[390px]:text-center lg:float-left">
+			<h1 class="text-blue-400 font-bold min-[390px]:text-4xl lg:text-5xl 2xl:text-6xl">
+				Hi!, I'm Daniel 👋
 			</h1>
 			<div class="text-light">
-				<p class="text-3xl">Front-End Developer</p>
+				<p class="lg:text-3xl 2xl:text-4xl lg:float-left min-[390px]:text-2xl">Front-End Developer</p>
 			</div>
 		</section>
-		<Projects />	
+		<section class="lg:mt-[500px] min-[390px]:text-center xl:text-left  min-[390px]:mt-40">
+			<header>
+				<h1 class="text-light min-[390px]:text-2xl lg:text-3xl 2xl:text-4xl">Projects</h1>
+			</header>
+			<Card />
+		</section>
 	</main>
 	<Footer />
 </Layout>
