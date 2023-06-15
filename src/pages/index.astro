@@ -1,26 +1,73 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/header.astro';
-import Card from '../components/card_project.astro';
+import CardProject from '../components/card_project.astro';
 import Footer from '../components/footer.astro'
 ---
 
 <Layout title="My Portfolio">
-	<main class="min-[390px]:w-[400px] lg:w-[1160px] 2xl:w-[1190px] h-screen m-auto transition-all">
+	<main class="min-[300px]:w-[400px] lg:w-[1160px] 2xl:w-[1190px] h-screen m-auto transition-all">
 		<Header />
-		<section class="text-light mt-60 min-[390px]:text-center lg:float-left">
-			<h1 class="text-blue-400 font-bold min-[390px]:text-4xl lg:text-5xl 2xl:text-6xl">
+		<section class="text-light mt-60 min-[300px]:text-center lg:float-left">
+			<h1 class="text-blue-400 font-bold min-[300px]:text-4xl lg:text-5xl 2xl:text-6xl">
 				Hi!, I'm Daniel 👋
 			</h1>
 			<div class="text-light">
-				<p class="lg:text-3xl 2xl:text-4xl lg:float-left min-[390px]:text-2xl">Front-End Developer</p>
+				<p class="lg:text-3xl 2xl:text-4xl lg:float-left min-[300px]:text-2xl">
+					Front End Developer
+				</p>
 			</div>
 		</section>
-		<section class="lg:mt-[500px] min-[390px]:text-center xl:text-left  min-[390px]:mt-40">
+		<section class="lg:mt-[500px] min-[300px]:text-center xl:text-left min-[300px]:mt-40">
 			<header>
-				<h1 class="text-light min-[390px]:text-2xl lg:text-3xl 2xl:text-4xl">Projects</h1>
+				<h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">Projects</h1>
 			</header>
-			<Card />
+			<section class="flex gap-10">
+				<CardProject 
+					title="The Sopranos"
+					description="Build a web for my favourite TV-Series (UNFINISHED)"
+					tag1="Astro"
+					tag2="Tailwind"
+					tag3="pnpm"
+					tag4="Visual Studio Code"
+				/>
+				<CardProject 
+					title="Github Card" 
+					description="Simple github card for practice with React/Vite." 
+					tag1="React"
+					tag2="Vite"
+					tag3="npm"
+					tag4="Visual Studio Code"
+				/>
+			</section>
+			<section class="flex gap-10">
+				<CardProject
+					title="Vercel" 
+					description="Vercel main page with Tailwind CSS"
+					tag1="HTML"
+					tag2="CSS"
+					tag3="Tailwind"
+					tag4="Visual Studio Code"
+				/>
+				<CardProject
+					title="CodingWMarina2023" 
+					description="Repository of all my java projects mades in first grade"
+					tag1="Java"
+					tag2="Java Swing"
+					tag3="JDK"
+					tag4="IntelliJ IDEA"
+				/>
+			</section>
+			<section class="flex place-content-center">
+				<CardProject
+					title="CalculateShapes" 
+					description="Calculates the area of various shapes that can be choosed by the user and enter their measurements."
+					tag1="Java"
+					tag2="Java Swing"
+					tag3="JDK"
+					tag4="IntelliJ IDEA"
+				/>
+			</section>
 		</section>
 	</main>
 	<Footer />
