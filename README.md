@@ -9,12 +9,16 @@
 ├── src/
 │   ├── components/
 │   │   │── styles/
-│   │   └── header.astro
+│   │   │── CardProject.astro   
+│   │   │── CardTechnology.astro
+│   │   │── Footer.astro
+│   │   └── Header.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
 │       └── index.astro
-└── package.json
+│── package.json
+└── tailwind.config.cjs
 ```
 
 ## 🧞 Commands
