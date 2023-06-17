@@ -1,13 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import Header from "../components/header.astro"
-import CardProject from "../components/card_project.astro"
+import CardProject from "../components/CardProject.astro"
 import Footer from "../components/footer.astro"
 ---
 
 <Layout title="My Portfolio">
   <main
-    class="min-[300px]:w-[400px] lg:w-[1160px] 2xl:w-[1190px] h-screen m-auto transition-all"
+    class="min-[300px]:w-[400px] lg:w-[1135px] 2xl:w-[1165px] h-screen m-auto transition-all"
   >
     <Header />
     <section class="text-light mt-60 min-[300px]:text-center lg:float-left">
@@ -30,7 +30,7 @@ import Footer from "../components/footer.astro"
           Projects
         </h1>
       </header>
-      <section class="flex gap-10">
+      <section class="flex gap-10 lg:flex min-[300px]:block">
         <CardProject
           title="The Sopranos"
           description="Build a web for my favourite TV-Series (UNFINISHED)"
@@ -52,7 +52,7 @@ import Footer from "../components/footer.astro"
           urlGit="https://github.com/kiudev/github-viewcard"
         />
       </section>
-      <section class="flex gap-10">
+      <section class="flex gap-10 lg:flex min-[300px]:block">
         <CardProject
           title="Vercel"
           description="Vercel main page with Tailwind CSS"
@@ -74,10 +74,10 @@ import Footer from "../components/footer.astro"
           urlGit="https://github.com/kiudev/CodingWMarina2023"
         />
       </section>
-      <section class="flex place-content-center">
+      <section class="flex place-content-center min-[300px]:mr-8">
         <CardProject
           title="CalculateShapes"
-          description="Calculates the area of various shapes that can be choosed by the user and enter their measurements."
+          description="Calculates the area of various shapes"
           tag1="Java"
           tag2="Java Swing"
           tag3="JDK"
