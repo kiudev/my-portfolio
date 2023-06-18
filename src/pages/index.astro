@@ -1,8 +1,9 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Header from "../components/header.astro"
-import CardProject from "../components/CardProject.astro"
-import Footer from "../components/footer.astro"
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import CardProject from '../components/CardProject.astro';
+import Footer from '../components/Footer.astro';
+import CardTechnology from '../components/CardTechnology.astro';
 ---
 
 <Layout title="My Portfolio">
@@ -16,11 +17,11 @@ import Footer from "../components/footer.astro"
       >
         Hi!, I'm Daniel 👋
       </h1>
-      <div class="text-light">
-        <p class="lg:text-3xl 2xl:text-4xl lg:float-left min-[300px]:text-2xl">
-          Front End Developer
-        </p>
-      </div>
+      <p
+        class="lg:text-3xl 2xl:text-4xl lg:float-left min-[300px]:text-2xl text-light"
+      >
+        Front-End Developer
+      </p>
     </section>
     <section
       class="lg:mt-[500px] min-[300px]:text-center xl:text-left min-[300px]:mt-40"
@@ -30,7 +31,7 @@ import Footer from "../components/footer.astro"
           Projects
         </h1>
       </header>
-      <section class="flex gap-10 lg:flex min-[300px]:block">
+      <div class="flex gap-10 lg:flex min-[300px]:block">
         <CardProject
           title="The Sopranos"
           description="Build a web for my favourite TV-Series (UNFINISHED)"
@@ -51,8 +52,8 @@ import Footer from "../components/footer.astro"
           urlSite="https://github-viewcard.vercel.app/"
           urlGit="https://github.com/kiudev/github-viewcard"
         />
-      </section>
-      <section class="flex gap-10 lg:flex min-[300px]:block">
+      </div>
+      <div class="flex gap-10 lg:flex min-[300px]:block">
         <CardProject
           title="Vercel"
           description="Vercel main page with Tailwind CSS"
@@ -73,8 +74,8 @@ import Footer from "../components/footer.astro"
           urlSite="https://github.com/kiudev/CodingWMarina2023"
           urlGit="https://github.com/kiudev/CodingWMarina2023"
         />
-      </section>
-      <section class="flex place-content-center min-[300px]:mr-8">
+      </div>
+      <div class="flex place-content-center min-[300px]:mr-8">
         <CardProject
           title="CalculateShapes"
           description="Calculates the area of various shapes"
@@ -85,7 +86,28 @@ import Footer from "../components/footer.astro"
           urlSite="https://github.com/kiudev/CalculateShapes"
           urlGit="https://github.com/kiudev/CalculateShapes"
         />
-      </section>
+      </div>
+    </section>
+    <section
+      class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
+    >
+      <header>
+        <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
+          Technologies
+        </h1>
+        <div class="flex place-content-center gap-20">
+          <!-- HTML5 -->
+          <CardTechnology
+            logo="/public/assets/html5.svg"
+            alt="HTML Logo"
+            text="HTML"
+          />
+          <CardTechnology logo="/public/assets/css.svg" alt="CSS Logo" />
+          <CardTechnology logo="/public/assets/html5.svg" alt="HTML5 Logo" />
+          <CardTechnology logo="/public/assets/html5.svg" alt="HTML5 Logo" />
+        </div>
+        
+      </header>
     </section>
     <Footer />
   </main>
