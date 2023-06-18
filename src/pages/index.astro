@@ -1,8 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
-import CardProject from '../components/CardProject.astro';
 import Footer from '../components/Footer.astro';
+import CardProject from '../components/CardProject.astro';
 import CardTechnology from '../components/CardTechnology.astro';
 ---
 
@@ -98,15 +98,14 @@ import CardTechnology from '../components/CardTechnology.astro';
         <div class="flex place-content-center gap-20">
           <!-- HTML5 -->
           <CardTechnology
-            logo="/public/assets/html5.svg"
+            logo="/assets/html5.svg"
             alt="HTML Logo"
             text="HTML"
           />
-          <CardTechnology logo="/public/assets/css.svg" alt="CSS Logo" />
-          <CardTechnology logo="/public/assets/html5.svg" alt="HTML5 Logo" />
-          <CardTechnology logo="/public/assets/html5.svg" alt="HTML5 Logo" />
+          <CardTechnology logo="/assets/css.svg" alt="CSS Logo" text="CSS" />
+          <CardTechnology logo="" alt="" />
+          <CardTechnology logo="" alt="" />
         </div>
-        
       </header>
     </section>
     <Footer />
