@@ -1,5 +1,7 @@
 # My Portfolio
 
+<img src="./public/assets/screenshot.PNG"></img>
+
 ## 🚀 Project Structure
 
 ```
@@ -11,8 +13,9 @@
 │   │   │── styles/
 │   │   │── CardProject.astro   
 │   │   │── CardTechnology.astro
-│   │   │── Footer.astro
-│   │   └── Header.astro
+│   │   │── CardTool.astro 
+│   │   │── footer.astro
+│   │   └── header.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
