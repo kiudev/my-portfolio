@@ -4,6 +4,7 @@ import Header from '../components/header.astro';
 import Footer from '../components/footer.astro';
 import CardProject from '../components/CardProject.astro';
 import CardTechnology from '../components/CardTechnology.astro';
+import CardTool from '../components/CardTool.astro';
 ---
 
 <Layout title="My Portfolio">
@@ -95,60 +96,89 @@ import CardTechnology from '../components/CardTechnology.astro';
         <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
           Technologies
         </h1>
-        <div class="flex place-content-center gap-20">
-          <!-- HTML5 -->
-          <CardTechnology
-            logo="/assets/html5.svg"
-            alt="HTML Logo"
-            name="HTML"
-            url="https://developer.mozilla.org/es/docs/Web/HTML"
-          />
-          <CardTechnology
-            logo="/assets/css.svg"
-            alt="CSS Logo"
-            name="CSS"
-            url="https://developer.mozilla.org/es/docs/Web/CSS"
-          />
-          <CardTechnology
-            logo="/assets/javascript.svg"
-            alt="JavaScript Logo"
-            name="JavaScript"
-            url="https://developer.mozilla.org/es/docs/Web/JavaScript"
-          />
-          <CardTechnology
-            logo="/assets/tailwindcss.svg"
-            alt="Tailwind Logo"
-            name="Tailwind CSS"
-            url="https://tailwindcss.com/"
-          />
-        </div>
-        <div class="flex place-content-center gap-20">
-          <CardTechnology
-            logo="/assets/react.svg"
-            alt="React Logo"
-            name="React"
-            url="https://react.dev/"
-          />
-          <CardTechnology
-            logo="/assets/astro.svg"
-            alt="Astro Logo"
-            name="Astro"
-            url="https://astro.build/"
-          />
-          <CardTechnology
-            logo="/assets/java.svg"
-            alt="Java Logo"
-            name="Java"
-            url="https://www.java.com/es/"
-          />
-          <CardTechnology
-            logo="/assets/mysql.svg"
-            alt="MySQL Logo"
-            name="MySQL"
-            url="https://www.mysql.com/"
-          />
-        </div>
       </header>
+      <div class="flex place-content-center gap-20">
+        <!-- HTML5 -->
+        <CardTechnology
+          logo="/assets/html5.svg"
+          alt="HTML Logo"
+          name="HTML"
+          url="https://developer.mozilla.org/es/docs/Web/HTML"
+        />
+        <CardTechnology
+          logo="/assets/css.svg"
+          alt="CSS Logo"
+          name="CSS"
+          url="https://developer.mozilla.org/es/docs/Web/CSS"
+        />
+        <CardTechnology
+          logo="/assets/javascript.svg"
+          alt="JavaScript Logo"
+          name="JavaScript"
+          url="https://developer.mozilla.org/es/docs/Web/JavaScript"
+        />
+        <CardTechnology
+          logo="/assets/tailwindcss.svg"
+          alt="Tailwind Logo"
+          name="Tailwind CSS"
+          url="https://tailwindcss.com/"
+        />
+      </div>
+      <div class="flex place-content-center gap-20">
+        <CardTechnology
+          logo="/assets/react.svg"
+          alt="React Logo"
+          name="React"
+          url="https://react.dev/"
+        />
+        <CardTechnology
+          logo="/assets/astro.svg"
+          alt="Astro Logo"
+          name="Astro"
+          url="https://astro.build/"
+        />
+        <CardTechnology
+          logo="/assets/java.svg"
+          alt="Java Logo"
+          name="Java"
+          url="https://www.java.com/es/"
+        />
+        <CardTechnology
+          logo="/assets/mysql.svg"
+          alt="MySQL Logo"
+          name="MySQL"
+          url="https://www.mysql.com/"
+        />
+      </div>
+    </section>
+    <section
+      class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
+    >
+      <header>
+        <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
+          Tools
+        </h1>
+      </header>
+      <div class="flex place-content-center gap-20">
+        <CardTool
+          logo="/assets/vscode.svg"
+          alt="VS Code Logo"
+          name="Visual Studio Code"
+          url="https://code.visualstudio.com/"
+        />
+        <CardTool
+          logo="/assets/intellijidea.svg"
+          alt="IntelliJ Idea Logo"
+          name="IntelliJ Idea"
+          url="https://www.jetbrains.com/idea/"
+        />
+        <CardTool
+          logo="/assets/atom.svg"
+          alt="Atom Logo"
+          name="Atom"
+          url="https://github.blog/2022-06-08-sunsetting-atom/"
+        />
+      </div>
     </section>
     <Footer />
   </main>
