@@ -12,9 +12,9 @@ import CardTool from '../components/CardTool.astro';
     class="min-[300px]:w-[400px] lg:w-[1135px] 2xl:w-[1165px] h-screen m-auto transition-all"
   >
     <Header />
-    <section class="text-light mt-60 min-[300px]:text-center lg:float-left">
+    <section class="text-light min-[300px]:mt-40 sm:mt-60 min-[300px]:text-center lg:float-left">
       <h1
-        class="text-blue-400 font-bold min-[300px]:text-4xl lg:text-5xl 2xl:text-6xl"
+        class="text-blue-400 font-bold text-5xl 2xl:text-6xl"
       >
         Hi!, I'm Daniel 👋
       </h1>
@@ -25,10 +25,10 @@ import CardTool from '../components/CardTool.astro';
       </p>
     </section>
     <section
-      class="lg:mt-[500px] min-[300px]:text-center xl:text-left min-[300px]:mt-40"
+      class="lg:mt-[500px] min-[300px]:text-center lg:text-left min-[300px]:mt-40"
     >
       <header>
-        <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
+        <h1 class="text-light text-3xl 2xl:text-4xl">
           Projects
         </h1>
       </header>
@@ -103,11 +103,11 @@ import CardTool from '../components/CardTool.astro';
       class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
     >
       <header>
-        <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
+        <h1 class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl">
           Technologies
         </h1>
       </header>
-      <div class="flex place-content-center gap-20">
+      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
         <!-- HTML5 -->
         <CardTechnology
           logo="/assets/html5.svg"
@@ -134,7 +134,7 @@ import CardTool from '../components/CardTool.astro';
           url="https://tailwindcss.com/"
         />
       </div>
-      <div class="flex place-content-center gap-20">
+      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
         <CardTechnology
           logo="/assets/react.svg"
           alt="React Logo"
@@ -165,11 +165,11 @@ import CardTool from '../components/CardTool.astro';
       class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
     >
       <header>
-        <h1 class="text-light min-[300px]:text-2xl lg:text-3xl 2xl:text-4xl">
+        <h1 class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl">
           Tools
         </h1>
       </header>
-      <div class="flex place-content-center gap-20">
+      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
         <CardTool
           logo="/assets/vscode.svg"
           alt="VS Code Logo"
