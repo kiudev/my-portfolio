@@ -1,7 +1,3 @@
-# My Portfolio
-
-<img src="./public/assets/screenshot.PNG"></img>
-
 ## 🚀 Project Structure
 
 ```

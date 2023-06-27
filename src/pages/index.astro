@@ -1,195 +1,189 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/header.astro';
-import Footer from '../components/footer.astro';
-import CardProject from '../components/CardProject.astro';
-import CardTechnology from '../components/CardTechnology.astro';
-import CardTool from '../components/CardTool.astro';
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/header.astro'
+import Footer from '../components/footer.astro'
+import CardProject from '../components/CardProject.astro'
+import CardTechnology from '../components/CardTechnology.astro'
+import CardTool from '../components/CardTool.astro'
 ---
 
 <Layout title="My Portfolio">
-  <main
-    class="min-[300px]:w-[400px] lg:w-[1135px] 2xl:w-[1165px] h-screen m-auto transition-all"
-  >
-    <Header />
-    <section class="text-light min-[300px]:mt-40 sm:mt-60 min-[300px]:text-center lg:float-left">
-      <h1
-        class="text-blue-400 font-bold text-5xl 2xl:text-6xl"
-      >
-        Hi!, I'm Daniel 👋
-      </h1>
-      <p
-        class="lg:text-3xl 2xl:text-4xl lg:float-left min-[300px]:text-2xl text-light"
-      >
-        Web Developer Student
-      </p>
-    </section>
-    <section
-      class="lg:mt-[500px] min-[300px]:text-center lg:text-left min-[300px]:mt-40"
+    <main
+        class="min-[300px]:w-[400px] lg:w-[1135px] 2xl:w-[1165px] h-screen m-auto transition-all"
     >
-      <header>
-        <h1 class="text-light text-3xl 2xl:text-4xl">
-          Projects
-        </h1>
-      </header>
-      <div class="flex gap-10 lg:flex min-[300px]:block">
-        <CardProject
-          title="The Sopranos"
-          description="Build a web for my favourite TV-Series (UNFINISHED)"
-          tag1="Astro"
-          tag2="Tailwind"
-          tag3="pnpm"
-          tag4="Visual Studio Code"
-          urlSite="https://thesopranos.vercel.app/"
-          urlGit="https://github.com/kiudev/the-sopranos-page"
-        />
-        <CardProject
-          title="Button Customizer"
-          description="Customize your own button (UNFINISHED)"
-          tag1="React"
-          tag2="Vite"
-          tag3="npm"
-          tag4="Visual Studio Code"
-          urlSite="https://customize-button.vercel.app/"
-          urlGit="https://github.com/kiudev/button-customizer"
-        />
-      </div>
-      <div class="flex gap-10 lg:flex min-[300px]:block">
-        <CardProject
-          title="Vercel"
-          description="Vercel main page with Tailwind CSS"
-          tag1="HTML"
-          tag2="CSS"
-          tag3="Tailwind"
-          tag4="Visual Studio Code"
-          urlSite="https://kiudev.github.io/vercel-mainpage/"
-          urlGit="https://github.com/kiudev/vercel-mainpage"
-        />
-        <CardProject
-          title="Github Card"
-          description="Simple github card for practice with React/Vite."
-          tag1="React"
-          tag2="Vite"
-          tag3="npm"
-          tag4="Visual Studio Code"
-          urlSite="https://github-viewcard.vercel.app/"
-          urlGit="https://github.com/kiudev/github-viewcard"
-        />
-      </div>
-      <div class="flex gap-10 lg:flex min-[300px]:block">
-        <CardProject
-          title="CalculateShapes"
-          description="Calculates the area of various shapes"
-          tag1="Java"
-          tag2="Java Swing"
-          tag3="JDK"
-          tag4="IntelliJ IDEA"
-          urlSite="https://github.com/kiudev/CalculateShapes"
-          urlGit="https://github.com/kiudev/CalculateShapes"
-        />
-        <CardProject
-          title="CodingWMarina2023"
-          description="Repository of all my Java projects mades in first grade"
-          tag1="Java"
-          tag2="Java Swing"
-          tag3="JDK"
-          tag4="IntelliJ IDEA"
-          urlSite="https://github.com/kiudev/CodingWMarina2023"
-          urlGit="https://github.com/kiudev/CodingWMarina2023"
-        />
-      </div>
-    </section>
-    <section
-      class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
-    >
-      <header>
-        <h1 class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl">
-          Technologies
-        </h1>
-      </header>
-      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
-        <!-- HTML5 -->
-        <CardTechnology
-          logo="/assets/html5.svg"
-          alt="HTML Logo"
-          name="HTML"
-          url="https://developer.mozilla.org/es/docs/Web/HTML"
-        />
-        <CardTechnology
-          logo="/assets/css.svg"
-          alt="CSS Logo"
-          name="CSS"
-          url="https://developer.mozilla.org/es/docs/Web/CSS"
-        />
-        <CardTechnology
-          logo="/assets/javascript.svg"
-          alt="JavaScript Logo"
-          name="JavaScript"
-          url="https://developer.mozilla.org/es/docs/Web/JavaScript"
-        />
-        <CardTechnology
-          logo="/assets/tailwindcss.svg"
-          alt="Tailwind Logo"
-          name="Tailwind CSS"
-          url="https://tailwindcss.com/"
-        />
-      </div>
-      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
-        <CardTechnology
-          logo="/assets/react.svg"
-          alt="React Logo"
-          name="React"
-          url="https://react.dev/"
-        />
-        <CardTechnology
-          logo="/assets/astro.svg"
-          alt="Astro Logo"
-          name="Astro"
-          url="https://astro.build/"
-        />
-        <CardTechnology
-          logo="/assets/java.svg"
-          alt="Java Logo"
-          name="Java"
-          url="https://www.java.com/es/"
-        />
-        <CardTechnology
-          logo="/assets/mysql.svg"
-          alt="MySQL Logo"
-          name="MySQL"
-          url="https://www.mysql.com/"
-        />
-      </div>
-    </section>
-    <section
-      class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
-    >
-      <header>
-        <h1 class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl">
-          Tools
-        </h1>
-      </header>
-      <div class="lg:flex place-content-center gap-20 min-[300px]:block">
-        <CardTool
-          logo="/assets/vscode.svg"
-          alt="VS Code Logo"
-          name="Visual Studio Code"
-          url="https://code.visualstudio.com/"
-        />
-        <CardTool
-          logo="/assets/intellijidea.svg"
-          alt="IntelliJ Idea Logo"
-          name="IntelliJ Idea"
-          url="https://www.jetbrains.com/idea/"
-        />
-        <CardTool
-          logo="/assets/atom.svg"
-          alt="Atom Logo"
-          name="Atom"
-          url="https://github.blog/2022-06-08-sunsetting-atom/"
-        />
-      </div>
-    </section>
-    <Footer />
-  </main>
+        <Header />
+        <section
+            class="text-light min-[300px]:mt-40 sm:mt-60 min-[300px]:text-center lg:float-left block"
+        >
+            <h1 class="text-blue-400 font-bold text-5xl 2xl:text-6xl">
+                Hi!, I'm Daniel 👋
+            </h1>
+            <h2
+                class="lg:text-3xl 2xl:text-4xl lg:float-left min-[300px]:text-2xl text-light"
+            >
+                Student Web Developer
+            </h2>
+        </section>
+        <section
+            class="lg:mt-[500px] min-[300px]:text-center lg:text-left min-[300px]:mt-40"
+        >
+            <header>
+                <h1 class="text-light text-3xl 2xl:text-4xl">Projects</h1>
+            </header>
+            <div class="flex gap-10 lg:flex min-[300px]:block">
+                <CardProject
+                    title="Button Customizer"
+                    description="Customize your own button (UNFINISHED)"
+                    tag1="React"
+                    tag2="Vite"
+                    tag3="npm"
+                    tag4="Visual Studio Code"
+                    urlSite="https://customize-button.vercel.app/"
+                    urlGit="https://github.com/kiudev/button-customizer"
+                />
+                <CardProject
+                    title="Vercel"
+                    description="Vercel main page with Tailwind CSS"
+                    tag1="HTML"
+                    tag2="CSS"
+                    tag3="Tailwind"
+                    tag4="Visual Studio Code"
+                    urlSite="https://kiudev.github.io/vercel-mainpage/"
+                    urlGit="https://github.com/kiudev/vercel-mainpage"
+                />
+            </div>
+            <div class="flex gap-10 lg:flex min-[300px]:block">
+                <CardProject
+                    title="Github Card"
+                    description="Simple github card for practice with React/Vite."
+                    tag1="React"
+                    tag2="Vite"
+                    tag3="npm"
+                    tag4="Visual Studio Code"
+                    urlSite="https://github-viewcard.vercel.app/"
+                    urlGit="https://github.com/kiudev/github-viewcard"
+                />
+                <CardProject
+                    title="CalculateShapes"
+                    description="Calculates the area of various shapes"
+                    tag1="Java"
+                    tag2="Java Swing"
+                    tag3="JDK"
+                    tag4="IntelliJ IDEA"
+                    urlSite="https://github.com/kiudev/CalculateShapes"
+                    urlGit="https://github.com/kiudev/CalculateShapes"
+                />
+            </div>
+            <div
+                class="flex place-content-center gap-10 lg:flex min-[300px]:block"
+            >
+                <CardProject
+                    title="CodingWMarina2023"
+                    description="Repository of all my Java projects mades in first grade"
+                    tag1="Java"
+                    tag2="Java Swing"
+                    tag3="JDK"
+                    tag4="IntelliJ IDEA"
+                    urlSite="https://github.com/kiudev/CodingWMarina2023"
+                    urlGit="https://github.com/kiudev/CodingWMarina2023"
+                />
+            </div>
+        </section>
+        <section
+            class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
+        >
+            <header>
+                <h1
+                    class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl"
+                >
+                    Technologies
+                </h1>
+            </header>
+            <div class="lg:flex place-content-center gap-20 min-[300px]:block">
+                <!-- HTML5 -->
+                <CardTechnology
+                    logo="/assets/html5.svg"
+                    alt="HTML Logo"
+                    name="HTML"
+                    url="https://developer.mozilla.org/es/docs/Web/HTML"
+                />
+                <CardTechnology
+                    logo="/assets/css.svg"
+                    alt="CSS Logo"
+                    name="CSS"
+                    url="https://developer.mozilla.org/es/docs/Web/CSS"
+                />
+                <CardTechnology
+                    logo="/assets/javascript.svg"
+                    alt="JavaScript Logo"
+                    name="JavaScript"
+                    url="https://developer.mozilla.org/es/docs/Web/JavaScript"
+                />
+                <CardTechnology
+                    logo="/assets/tailwindcss.svg"
+                    alt="Tailwind Logo"
+                    name="Tailwind CSS"
+                    url="https://tailwindcss.com/"
+                />
+            </div>
+            <div class="lg:flex place-content-center gap-20 min-[300px]:block">
+                <CardTechnology
+                    logo="/assets/react.svg"
+                    alt="React Logo"
+                    name="React"
+                    url="https://react.dev/"
+                />
+                <CardTechnology
+                    logo="/assets/astro.svg"
+                    alt="Astro Logo"
+                    name="Astro"
+                    url="https://astro.build/"
+                />
+                <CardTechnology
+                    logo="/assets/java.svg"
+                    alt="Java Logo"
+                    name="Java"
+                    url="https://www.java.com/es/"
+                />
+                <CardTechnology
+                    logo="/assets/mysql.svg"
+                    alt="MySQL Logo"
+                    name="MySQL"
+                    url="https://www.mysql.com/"
+                />
+            </div>
+        </section>
+        <section
+            class="lg:mt-40 min-[300px]:text-center xl:text-left min-[300px]:mt-40"
+        >
+            <header>
+                <h1
+                    class="text-light min-[300px]:text-2xl lg:text-left lg:text-3xl 2xl:text-4xl"
+                >
+                    Tools
+                </h1>
+            </header>
+            <div class="lg:flex place-content-center gap-20 min-[300px]:block">
+                <CardTool
+                    logo="/assets/vscode.svg"
+                    alt="VS Code Logo"
+                    name="Visual Studio Code"
+                    url="https://code.visualstudio.com/"
+                />
+                <CardTool
+                    logo="/assets/intellijidea.svg"
+                    alt="IntelliJ Idea Logo"
+                    name="IntelliJ Idea"
+                    url="https://www.jetbrains.com/idea/"
+                />
+                <CardTool
+                    logo="/assets/atom.svg"
+                    alt="Atom Logo"
+                    name="Atom"
+                    url="https://github.blog/2022-06-08-sunsetting-atom/"
+                />
+            </div>
+        </section>
+        <Footer />
+    </main>
 </Layout>
