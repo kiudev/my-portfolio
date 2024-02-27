@@ -14,14 +14,14 @@ const { urlGit } = Astro.props;
 ---
 
 <section
-  class="border-2 border-blue-400 border-opacity-70 lg:w-[600px] h-52 mt-10 rounded-xl min-[300px]:w-[350px] min-[300px]:ml-5 lg:ml-0 lg:hover:shadow-lg lg:hover:shadow-blue-400 transition-all"
+  class="border-2 border-light border-opacity-70 lg:w-[600px] h-52 mt-10 rounded-xl min-[300px]:w-[350px] min-[300px]:ml-5 lg:ml-0 lg:hover:shadow-lg lg:hover:shadow-light-700 transition-all"
 >
   <header class="mt-5">
     <p class="text-light text-center text-xl 2xl:text-2xl">{title}</p>
     <div class="float-right mr-10 -mt-[40px]">
       <a href={urlSite} target="_blank">
         <svg
-          class="fill-light w-6 hover:fill-blue-400"
+          class="fill-light w-6 hover:fill-light-700"
           xmlns="http://www.w3.org/2000/svg"
           width="50"
           height="50"
@@ -36,7 +36,7 @@ const { urlGit } = Astro.props;
     <div class="float-left ml-10 -mt-7">
       <a href={urlGit} target="_blank">
         <svg
-          class="hover:text-blue-400 transition-all"
+          class="hover:text-light-700 transition-all"
           width="27"
           height="27"
           stroke-width="1.5"
